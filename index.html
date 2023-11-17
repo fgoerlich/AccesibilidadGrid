@@ -12,6 +12,17 @@
     <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
     <script src="libs/panelset/panelset.js"></script>
+    <script src="libs/htmlwidgets/htmlwidgets.js"></script>
+    <link href="libs/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
+    <script src="libs/datatables-binding/datatables.js"></script>
+    <script src="libs/jquery/jquery-3.6.0.min.js"></script>
+    <link href="libs/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="libs/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
+    <script src="libs/dt-core/js/jquery.dataTables.min.js"></script>
+    <link href="libs/dt-ext-fixedcolumns/css/fixedColumns.dataTables.min.css" rel="stylesheet" />
+    <script src="libs/dt-ext-fixedcolumns/js/dataTables.fixedColumns.min.js"></script>
+    <link href="libs/crosstalk/css/crosstalk.min.css" rel="stylesheet" />
+    <script src="libs/crosstalk/js/crosstalk.min.js"></script>
   </head>
   <body>
     <textarea id="source">
@@ -274,10 +285,16 @@ Debemos, pues, esperar que el proceso de concentración, y envejecimiento, de la
 
 ---
 
+### .center[Indicadores demográficos por grado de urbanización a nivel municipal]
 
+&lt;img src="./img/19_DEGURBA.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 ---
 
+### .center[Indicadores demográficos por grado de urbanización a nivel municipal]
+
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-a27aa534d0f6b505fbf2" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-a27aa534d0f6b505fbf2">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns"],"data":[["1","2","3","4","5","6"],["Urbano","Intermedio","Rural","Categoría Urbana","Rural Próximo","Rural Remoto"],[220,1109,6802,1329,3238,3564],[25395.281973,109701.577825,369647.943081,135096.859798,143047.745215,226600.197866],[240.9409090909091,297.0599639314698,676.3677447809467,287.7701279157261,579.6111797405806,764.2739618406285],[25563852,15506786,6314469,41070638,3801095,2513374],[0.5394912794013529,0.3272502054284693,0.1332585151701778,0.8667414848298222,0.08021708170881624,0.05304143346136161],[43.71095763371542,42.59913916470479,47.15420978897085,43.29117523175236,46.0708556726196,48.79261772781807],[15.03744819051526,16.29608482376683,12.86288680805939,15.51266381593585,13.88610387269984,11.31542699176486],[19.65913431199649,17.61567484067943,24.60335144570351,18.88759799640804,22.91347624829161,27.15903005282938],[35296.55092424635,30484.18619129432,27489.19754694453,33510.44094247343,29160.82487495969,25124.82251065213],[108.0952655680246,93.35745605980694,84.18533911333729,102.6253250849498,89.30467783683962,76.94446880850336]],"container":"<table class=\"RowGroup\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Grado de Urbanización<\/th>\n      <th>Municipios<\/th>\n      <th>Superficie (km²)<\/th>\n      <th>Altitud (m)<\/th>\n      <th>Población<\/th>\n      <th>Población (%)<\/th>\n      <th>Edad Media (años)<\/th>\n      <th>Población menor de 16 años (%)<\/th>\n      <th>Población de 65 años y más (%)<\/th>\n      <th>Renta por Hogar (€)<\/th>\n      <th>Renta por Hogar (España = 100)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"rtip","pageLength":6,"scrollX":true,"fixedColumns":{"leftColumns":1},"columnDefs":[{"targets":11,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \".\", \",\", null);\n  }"},{"targets":10,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 0, 3, \".\", \",\", null);\n  }"},{"targets":9,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \".\", \",\", null);\n  }"},{"targets":8,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \".\", \",\", null);\n  }"},{"targets":7,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 0, 3, \".\", \",\", null);\n  }"},{"targets":6,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \".\", \",\", null);\n  }"},{"targets":5,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 0, 3, \".\", \",\", null);\n  }"},{"targets":4,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 0, 3, \".\", \",\", null);\n  }"},{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 0, 3, \".\", \",\", null);\n  }"},{"targets":2,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 0, 3, \".\", \".\", null);\n  }"},{"className":"dt-right","targets":[2,3,4,5,6,7,8,9,10,11]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[6,10,25,50,100]}},"evals":["options.columnDefs.0.render","options.columnDefs.1.render","options.columnDefs.2.render","options.columnDefs.3.render","options.columnDefs.4.render","options.columnDefs.5.render","options.columnDefs.6.render","options.columnDefs.7.render","options.columnDefs.8.render","options.columnDefs.9.render"],"jsHooks":[]}</script>
 
 ---
 

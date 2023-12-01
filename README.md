@@ -11,4 +11,4 @@ Seminario Senior, :muscle:, del Departamento de Fundamentos del Análisis Econó
 
 _Universidad de Valencia_
 
-19 de diciembre de 2023
+?? de ???? de 2024
